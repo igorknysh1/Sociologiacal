@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <header>
+            <img src="be_original.jpg" width="1340" alt="be_original">
+        </header>
+        <nav>
+            <h1>
+                <a href="index.html">Home</a>
+                &nbsp;<a href="form.html">Sociological survey</a>
+            </h1>
+        </nav>
+        <hr>
+        <article>
+            <section>
+                <h2>Questions?</h2>
+                <!--first part-->
+                <form action="https://formspree.io/igorknysh1@gmail.com" method="POST" autocomplete="off">
+                    <fieldset>
+                        <legend>Personal information:</legend>
+                        <label for="foto">
+                            Please select your photography:
+                <input type="file" name="file" id="foto">
+                        </label>
+                        <br>
+                        <label for="image">
+                            <input type="image" name="image" id="image" alt="image_send">
+                        </label>
+                        <br>
+                        <p>Please enter your name and surname:</p>
+                        <label for="Name_people">
+                            First name:<br>
+                            <input type="text" name="Name_people" id="Name_people" pattern="^(?=[a-zA-Z\s]{2,25}$)(?=[a-zA-Z\s])(?:([\w\s*?])\1?(?!\1))+$" placeholder="Ihor" required title="First_name">
+                        </label>
+                        <br>
+                        <label for="Surname_people">
+                            Last name:<br>
+                            <input type="text" name="Surname_people" id="Surname_people" pattern="^(?=[a-zA-Z\s]{2,25}$)(?=[a-zA-Z\s])(?:([\w\s*?])\1?(?!\1))+$" placeholder="Knysh" required title="Last_name">
+                        </label>
+                        <br>
+                        <br>
+                        <label for="Age_people">
+                            Your age:<br>
+                            <input type="text" name="Age_people" id="Age_people" pattern="[\d]{1,3}" placeholder="18+" required title="23">
+                        </label>
+                        <br>
+                        <label for="Height_people">
+                            Your нeight, cm:<br>
+                            <input type="text" name="Height_people" id="Height_people" pattern="[\d]{1,3}" placeholder="190" required title="189">
+                        </label>
+                        <br>
+                        <label for="weight_people">
+                            Your weight, kg:<br>
+                            <input type="text" name="weight_people" id="weight_people" pattern="[\d]{1,3}" placeholder="84" required title="87">
+                        </label>
+                        <br>
+                        <p>Please check your gender:</p>
+                        <input type="radio" name="sex" value="male" checked>
+                        Male<br>
+                        <input type="radio" name="sex" value="female">
+                        Female<br>
+                        <input type="radio" name="sex" value="other">
+                        Other 
+          <br>
+                        <br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contacts</legend>
+                        <label for="Phone">
+                            Phone number:<br>
+                            + 380 (
+            <input type="text" name="Phone" id="Phone" pattern="[\d]{1,2}" placeholder="98" required title="98">)
+            
+                        </label>
+                        <label for="Phone_people">
+                            <input type="text" name="Phone_people" id="Phone_people" pattern="[\d]{1,7}" placeholder="4455103" required title="5556103">
+                        </label>
+                        <br>
+                        <label for="Adress_town">
+                            Home address:<br>
+                            City name:<input type="text" name="Adress_town" id="Adress_town" pattern="^\s*[a-zA-Z]{1}[0-9a-zA-Z][0-9a-zA-Z '-.=#/]*$" placeholder="Lviv" required title="Lviv">
+                        </label>
+                        <label for="Adress_street">
+                            Street name<input type="text" name="Adress_street" id="Adress_street" pattern="^\s*[a-zA-Z]{1}[0-9a-zA-Z][0-9a-zA-Z '-.=#/]*$" placeholder="Pasichna" required title="Lviv">
+                        </label>
+                        <label for="Adress_building">
+                            Building number<input type="text" name="Adress_building" id="Adress_building" pattern="[\d]{1,3}" placeholder="145" required title="156">
+                        </label>
+                        <br>
+                        <label>
+                            Your Email:<br>
+                            <input type="email" name="People_Email" id="People_Email" pattern="^([a-z0-9_\.-]+\@[\da-z\.-]+\.[a-z\.]{2,6})$" placeholder="email@xmail.com" required title="email@xmail.com">
+                        </label>
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        <br>
+                    </fieldset>
+                </form>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <section>
+                <h3>What do you schoose?</h3>
+                <!--two part-->
+                <form action="https://formspree.io/igorknysh1@gmail.com" method="POST">
+                    <fieldset>
+                        <legend>What do you like?</legend>
+                        You Drinking alcohol?<br>
+                        Yes<input type="checkbox" name="drink" id="Drink_people" value="checkbox">
+                        No<input type="checkbox" name="drink" id="Drink_peopleN" value="checkbox">
+                        Sometimes<input type="checkbox" name="drink" id="Drink_peopleS" value="checkbox">
+                        On holidays<input type="checkbox" name="drink" id="Drink_peopleO" value="checkbox">
+                        <br>
+                        <br>
+                        You Smoking?<br>
+                        Yes<input type="checkbox" name="smoke" value="checkbox">
+                        No<input type="checkbox" name="smokeN" value="checkbox">
+                        Sometimes<input type="checkbox" name="smokeS" value="checkbox">
+                        On holidays<input type="checkbox" name="smokeO" value="checkbox">
+                        <br>
+                        <br>
+                        You have a car?<br>
+                        Yes<input type="checkbox" name="car" value="checkbox">
+                        No<input type="checkbox" name="car" value="checkbox">
+                        <br>
+                        <br>
+                        You like more?<br>
+                        Walking<input type="checkbox" name="walk" value="checkbox">
+                        Stay at home<input type="checkbox" name="home" value="checkbox">
+                        <br>
+                        <br>
+                        You are taking medication now?<br>
+                        Yes<input type="checkbox" name="medication" value="checkbox">
+                        No<input type="checkbox" name="medication" value="checkbox">
+                        <br>
+                        <br>
+                        You have a job?<br>
+                        Yes<input type="checkbox" name="job" value="checkbox">
+                        No<input type="checkbox" name="job" value="checkbox">
+                        <br>
+                        <br>
+                        You eat meat?<br>
+                        Yes<input type="checkbox" name="meat" value="checkbox">
+                        No<input type="checkbox" name="meat" value="checkbox">
+                        <br>
+                        <br>
+                        <p>Your favorite drinks:</p>
+                        <input type="radio" name="drinks" value="water" checked>
+                        Water<br>
+                        <input type="radio" name="drinks" value="Cola">
+                        Cola<br>
+                        <input type="radio" name="drinks" value="juice">
+                        Juice<br>
+                        <input type="radio" name="drinks" value="beer">
+                        Beer<br>
+                        <input type="radio" name="drinks" value="tea">
+                        Tea<br>
+                        <input type="radio" name="drinks" value="Coffee">
+                        Coffee<br>
+                        <input type="radio" name="drinks" value="other">
+                        Other 
+          <br>
+                        <p>How many hours a day do you sleep?</p>
+                        <input type="radio" name="sleep" value="3" checked>
+                        3<br>
+                        <input type="radio" name="sleep" value="4">
+                        4<br>
+                        <input type="radio" name="sleep" value="5">
+                        5<br>
+                        <input type="radio" name="sleep" value="6">
+                        6<br>
+                        <input type="radio" name="sleep" value="7">
+                        7<br>
+                        <input type="radio" name="sleep" value="8">
+                        8<br>
+                        <input type="radio" name="sleep" value="9">
+                        9<br>
+                        <input type="radio" name="sleep" value="other">
+                        Other 
+         <br>
+                        <br>
+                        <label for="sport_people">
+                            Your favorite kind of sport?<br>
+                            <input type="text" name="sport_people" id="sport_people" pattern="^(?=[a-zA-Z\s]{2,25}$)(?=[a-zA-Z\s])(?:([\w\s*?])\1?(?!\1))+$" placeholder="basketball" required title="darts">
+                        </label>
+                        <br>
+                        <br>
+                        <label for="computer_people">
+                            How many hours a day do you spend at the computer?<br>
+                            <input type="text" name="computer_people" id="computer_people" pattern="[\d]{1,2}" placeholder="6" required title="0">
+                        </label>
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        <br>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+        <br>
+        <br>
+        <footer>
+            <p>
+                Published <time datetime="2017-02-16">February 16, 2017</time>
+            </p>
+        </footer>
+    </body>
+</html>
